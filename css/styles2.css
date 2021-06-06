@@ -1,0 +1,14 @@
+body {
+  background-color: #33f072;
+  background-image: url(img/kk2.png);
+  height: 500px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ }
+.one{
+  font-style:oblique;
+  text-decoration: underline;
+  color: blueviolet;
+}
