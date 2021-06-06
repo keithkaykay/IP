@@ -60,6 +60,39 @@
       
       font-size: 20px;
     }
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+  
     </style>
   </head>
 
@@ -99,6 +132,12 @@
         <br>
         <br>
         <br>
+        <div class="navbar">
+          <a href="index.html" class="active">Home</a>
+          <a href="me.html">About me</a>
+          <a href="index2.html">Projects</a>
+          <a href="two.html">Contact me</a>
+        </div>
         <br>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
