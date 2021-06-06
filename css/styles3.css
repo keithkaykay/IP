@@ -1,0 +1,59 @@
+html {
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga", "kern";
+  font-family: "Montserrat", "HelveticaNeueLTStd" "Lucida Grande", sans-serif;
+  line-height: 1.5;
+}
+body{
+  background-color:#42f498;
+  font-size:small;
+}
+.form .button, .form .label, .form .textarea, .form .text-input {
+  padding: 1em 1.5em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  line-height: normal;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.form .textarea:placeholder, .form .text-input:placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+.form .textarea:-webkit-autofill, .form .text-input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px white inset;
+  border-top-color: white;
+  border-left-color: white;
+  border-right-color: white;
+}
+
+[id=sidebar] a:before, [id=sidebar] a:after {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  right: -0.75em;
+  bottom: -0.5em;
+  left: -0.75em;
+  display: block;
+}
+[id=sidebar] a:before {
+  transform-origin: right 0;
+  transform: scaleX(0);
+  transition: transform 0.3s, transform-origin 0.3s;
+  background: black;
+  z-index: -1;
+}
+[id=sidebar] a:hover {
+  color: white;
+  transition: color 0.15s 0.15s;
+}
+[id=sidebar] a:hover:before {
+  transform-origin: left 0;
+  transform: scaleX(1);
+  transition: transform-origin 0s, transform 0.3s;
+}
+[id=sidebar] a:hover:after {
+  z-index: 1;
+}
